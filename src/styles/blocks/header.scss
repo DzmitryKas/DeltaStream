@@ -1,0 +1,53 @@
+.header {
+    height: 100vh;
+    background: url('../assets/img/jpg/bg@1X.jpeg')no-repeat; 
+    background-size: cover; 
+    
+    &__top {
+        padding: 30px 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+
+    &__img {
+        margin-top: -10px;
+        margin-right: 34px;
+    }
+
+    &__btn {
+        padding: 9px 17px 9px 13px;
+        display: flex;
+        align-items: center;
+        border: 2px solid white;
+        border-radius: 5px;
+        background:rgba(255,255,255, 0.5);
+        cursor: pointer;
+        @include transition;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    &__btn-img {
+        margin-right: 20px;
+    }
+
+    &__btn-text {
+        @include noto;
+        font-size: 14pt;
+        color: rgba(62, 147, 159, 255);
+    }
+
+    &__bottom {
+        padding-top: 50px;
+        height: 473px;
+        background: url('../assets/img/jpg/Layer 40@1X.jpeg');
+    }
+}
