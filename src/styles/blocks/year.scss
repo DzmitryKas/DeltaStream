@@ -1,0 +1,65 @@
+.year {
+    height: 100vh;
+    position: relative;
+    display: flex;
+    align-items: center;    
+
+    &__inner {        
+        padding: 59px 0 152px;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__top {
+        z-index: inherit;
+    }
+
+    &__title {
+        font-size: 34px;
+        color: $secondary-color;
+        font-weight: 700;
+    }
+
+    &__bottom {
+        max-width: 229px;
+        width: 100%;
+        margin: 0 auto;
+        z-index: inherit;
+        display: flex;
+        flex-direction: column;        
+    }
+
+    &__desc {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__plus,
+    &__minus {
+        border: none;
+        background: transparent;
+        color: $secondary-color;
+        font-size: 44px;
+        cursor: pointer;
+        @include transition;
+
+        &:hover {
+            opacity: .8;
+        }
+    }
+
+    &__text {
+        display: block;
+        width: 129px;
+        height: 80px;
+        border-radius: 5px;
+        background-color: $primary-color;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 34px;
+        color: rgba(47, 69, 92, 255);
+    }
+}

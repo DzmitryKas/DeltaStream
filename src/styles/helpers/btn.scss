@@ -1,0 +1,24 @@
+.btn {
+    margin-top: 17px;
+    padding: 13px 0;
+    border: none;
+    background-color: $secondary-color;
+    border-radius: 5px;
+    @include transition;
+    @include noto;
+    font-weight: 700px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: $primary-color;
+    cursor: pointer;
+
+    &:hover {
+        opacity: .8;
+    }
+}
+
+button, 
+button:active, 
+button:focus {
+    outline: none;
+}
