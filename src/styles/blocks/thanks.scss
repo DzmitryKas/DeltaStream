@@ -1,0 +1,31 @@
+.thanks {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    display: none;
+
+    &__inner {
+        justify-content: center;
+        padding:15px
+    }
+
+    &__title {
+        z-index: inherit;
+        font-size: 45px;
+        font-weight: 700;
+        color: $primary-color;
+    }
+
+    &__subtitle {
+        margin-top: 33px;
+        font-size: 24px;
+        font-weight: 700;
+        color: $secondary-color;
+        z-index: inherit;
+        text-align: center;
+
+        @include mobile {
+            font-size: 20px;
+        }
+    }
+}

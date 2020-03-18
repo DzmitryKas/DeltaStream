@@ -7,10 +7,10 @@
     <link href="https://fonts.googleapis.com/css?family=Montserrat:300,700|Noto+Sans:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header class="header">
+    <header class="header" id="js-header">
         <div class="container">
             <div class="header__inner">
-                <div class="header__top">
+                 <div class="header__top"> 
                     <div class="header__logo">
                         <img src="./assets/img/png/logo@1X.png" alt="" class="header__img">
                         <img src="./assets/img/png/Ellipse 1@1X.png" alt="" class="header__second-img">
@@ -19,14 +19,14 @@
                         <img src="./assets/img/png/Layer 41@1X.png" alt="" class="header__btn-img">
                         <span class="header__btn-text">Индивидуальная консультация</span>
                     </button>
-                </div>
+                </div> 
                 <div class="header__bottom">
                     <div class="header__content content">
                         <div class="content__top">
-                            <h1 class="title content__title">Подбор Каско on-line</span>
+                            <h1 class="content__title">Подбор Каско on-line</h1>
                             <p class="content__subtitle">Ответьте на <span>7 вопросов</span> и наш сервис подберет для Вас 
                                 самое выгодное предложение</p>
-                        </div>
+                        </div> 
                         <div class="content__middle">
                             <div class="form-field">
                                 <label class="content__text">1.Марка вашего авто:</label>
@@ -38,7 +38,7 @@
                                 </select>
                             </div>                            
                             <button class="btn content__btn">Расcчитать</button>
-                        </div>
+                        </div> 
                         <div class="content__bottom">
                             <ul class="content__list">
                                 <li class="content__item"><img src="./assets/img/png/Layer 39 copy 2@1X.png" alt="" class="content__icon"></li>
@@ -62,7 +62,7 @@
         </div>
     </header>
     <main class="main">
-        <section class="year">
+        <section class="year" id="js-year">
             <div class="container">
                 <div class="year__inner content content--border">
                     <div class="year__top">
@@ -87,7 +87,7 @@
                 </div>
             </div>
         </section>
-        <section class="data">
+        <section class="data" id="js-data">
             <div class="container">
                 <div class="data__inner content content--border">
                     <div class="data__top">
@@ -118,8 +118,27 @@
                         </div>
                     </div>
                     <div class="data__bottom">
-                        
+                        <form action="" class="form">
+                            <div class="form__field">
+                                <label for="" class="form__label">Как к вам обращаться?</label>
+                                <input type="text" class="form__input" placeholder="Имя">
+                            </div>
+                            <div class="form__field">
+                                <label for="" class="form__label">Телефон для расчета</label>
+                                <input type="text" class="form__input" placeholder="+375 __ ___ __ __">
+                            </div>
+                            <button class="btn form__btn">Получить расчет</button>
+                        </form>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="thanks" id="js-thanks">
+            <div class="container">
+                <div class="thanks__inner content content--border">
+                    <span class="thanks__title">Спасибо!</span>
+                    <p class="thanks__subtitle">Ваша заявка отправлена, наш менеждер свяжется с Вами 
+                    </p>
                 </div>
             </div>
         </section>
