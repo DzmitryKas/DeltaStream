@@ -30,14 +30,14 @@
                         <div class="content__middle">
                             <div class="form-field">
                                 <label class="content__text">1.Марка вашего авто:</label>
-                                <select class="content__select" id="cars" name="cars">
+                                <select class="content__select" id="js-cars" name="cars">
                                     <option value="volvo">Volvo</option>
                                     <option value="saab">Saab</option>
                                     <option value="fiat">Fiat</option>
                                     <option value="audi">Audi</option>
                                 </select>
                             </div>                            
-                            <button class="btn content__btn">Расcчитать</button>
+                            <button class="btn content__btn" data-block='js-year'>Расcчитать</button>
                         </div> 
                         <div class="content__bottom">
                             <ul class="content__list">
@@ -70,11 +70,11 @@
                     </div>
                     <div class="year__bottom">
                         <div class="year__desc">
-                            <button class="year__plus">-</button>
-                            <div class="year__text">2011</div>
-                            <button class="year__minus">+</button>                            
+                            <button class="year__plus" id='js-minus'>-</button>
+                            <div class="year__text" id='js-text'>2011</div>
+                            <button class="year__minus" id='js-plus'>+</button>                            
                         </div>
-                        <button class="btn year__btn">Далее</button>
+                        <button class="btn year__btn" data-block='js-data'>Далее</button>
                         
                     </div>
                     <div class="content__extra">
@@ -97,7 +97,7 @@
                         <div class="data__left">
                             <ul class="data__list">
                                 <li class="data__item">Марка вашего авто:<span id="js-car"></span></li>
-                                <li class="data__item">Год выпуска автомобиля:<span id="js-year"></span></li>
+                                <li class="data__item">Год выпуска автомобиля:<span id="js-selectYear"></span></li>
                                 <li class="data__item">Ориентировочная стоимость:<span>12 000$</span></li>
                                 <li class="data__item">Стаж вождения:<span>5лет</span></li></li>
                                 <li class="data__item">Страховка от угона:<span>да</span></li></li>
@@ -118,30 +118,30 @@
                         </div>
                     </div>
                     <div class="data__bottom">
-                        <form action="" class="form">
+                        <form action="" class="form" data-param='end'>
                             <div class="form__field">
                                 <label for="" class="form__label">Как к вам обращаться?</label>
-                                <input type="text" class="form__input" placeholder="Имя">
+                                <input type="text" class="form__input" name='Name' placeholder="Имя" pattern="[a-zA-Z]+" minlength="3" maxlength="15">
                             </div>
                             <div class="form__field">
                                 <label for="" class="form__label">Телефон для расчета</label>
-                                <input type="text" class="form__input" placeholder="+375 __ ___ __ __">
+                                <input type="text" class="form__input" placeholder="+375 __ ___ __ __" pattern="[a-zA-Z0-9]+" minlength="13" maxlength="13">
                             </div>
-                            <button class="btn form__btn">Получить расчет</button>
+                            <input type="submit" value='Получить расчет' name='Phone'  class="btn form__btn"></input>
                         </form>
                     </div>
                 </div>
             </div>
-        </section>
-        <section class="thanks" id="js-thanks">
-            <div class="container">
-                <div class="thanks__inner content content--border">
-                    <span class="thanks__title">Спасибо!</span>
-                    <p class="thanks__subtitle">Ваша заявка отправлена, наш менеждер свяжется с Вами 
-                    </p>
-                </div>
-            </div>
-        </section>
+        </section>         
+            <section class="thanks" id="js-thanks">
+                <div class="container">
+                    <div class="thanks__inner content content--border">
+                        <span class="thanks__title">Спасибо!</span>
+                        <p class="thanks__subtitle">Ваша заявка отправлена, наш менеждер свяжется с Вами 
+                        </p>
+                    </div>            
+                </div>           
+            </section>                 
     </main>
 </body>
 </html>
